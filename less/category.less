@@ -1,0 +1,106 @@
+@import "./base.less";
+html, body {
+    position: relative;
+    height: 100%;
+    padding: .45rem 0 0.5rem;
+  }
+//   body {
+//     background: #fff;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     color:#000;
+//     margin: 0;
+//     padding: 0;
+//   }
+//   .swiper-container {
+//     width: 100%;
+//     height: 100%;
+//   }
+//   .swiper-slide {
+//     font-size: 18px;
+//     height: auto;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     padding: 30px;
+//   }
+
+
+
+.content{
+    display: flex;
+    height: 100%;
+
+    .contentLeft{
+        width: 0.85rem;
+        height: 100%;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
+          .swiper-slide {
+            height: auto;
+
+          }
+
+        ul{
+            height: auto;
+            // background-color: pink;
+            li{
+                &.active {
+                    a {
+                        background-color: #fff;
+                        color: @main-color;
+                    }
+                }
+                
+                a{  display: block;
+                    text-align: center;
+                    height: .48rem;
+                    line-height: 0.48rem;
+                }
+            }
+        }
+    }
+    .contentRight{
+        flex: 1;
+        height: 100%;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
+          .swiper-slide {
+            height: auto;
+
+          }
+        .banner{
+            img{
+                width: 100%;
+            }
+        }
+        h4{
+            line-height: 0.6rem;
+        }
+        ul{
+            height: auto;
+            display: flex;
+            /* 设置flex换行 */
+            flex-wrap: wrap;
+            li{
+                width: 33.33%;
+                a{  
+                    display: block;
+                    text-align: center;
+                    img{
+                      width: 0.7rem;
+                    }   
+                    span{
+                        display: block;
+                    }
+
+                }
+            }
+        }
+    }
+    
+
+}
