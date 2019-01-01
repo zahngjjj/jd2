@@ -371,73 +371,44 @@ textarea::-webkit-input-placeholder {
   position: absolute;
   bottom: -0.04rem;
 }
-html,
-body {
-  position: relative;
-  height: 100%;
-  padding: .45rem 0 0.5rem;
+#banner {
+  width: 12.42rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.content {
-  display: flex;
-  height: 100%;
+#banner .swiper-container {
+  width: 12.42rem;
 }
-.content .contentLeft {
-  width: 0.85rem;
-  height: 100%;
+#banner .swiper-container img {
+  /* 轮播图全屏的和屏幕宽度有关可以使用vw */
+  height: 8.12rem;
 }
-.content .contentLeft .swiper-container {
-  width: 100%;
-  height: 100%;
-}
-.content .contentLeft .swiper-slide {
-  height: auto;
-}
-.content .contentLeft ul {
-  height: auto;
-}
-.content .contentLeft ul li.active a {
+#banner .swiper-pagination-bullet-active {
   background-color: #fff;
-  color: #de181b;
 }
-.content .contentLeft ul li a {
-  display: block;
-  text-align: center;
-  height: .48rem;
-  line-height: 0.48rem;
+#banner .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0.27rem;
 }
-.content .contentRight {
-  flex: 1;
-  height: 100%;
+#main {
+  padding-top: 8.2rem;
+  width: 12.42rem;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.content .contentRight .swiper-container {
+#main .swiper-container {
   width: 100%;
   height: 100%;
 }
-.content .contentRight .swiper-slide {
-  height: auto;
-}
-.content .contentRight .banner img {
+#main .swiper-container .swiper-wrapper {
   width: 100%;
+  height: 100%;
 }
-.content .contentRight h4 {
-  line-height: 0.6rem;
-}
-.content .contentRight ul {
+#main .swiper-container .swiper-wrapper .swiper-slide {
+  font-size: 0.18rem;
   height: auto;
-  display: flex;
-  /* 设置flex换行 */
-  flex-wrap: wrap;
-}
-.content .contentRight ul li {
-  width: 33.33%;
-}
-.content .contentRight ul li a {
-  display: block;
-  text-align: center;
-}
-.content .contentRight ul li a img {
-  width: 0.7rem;
-}
-.content .contentRight ul li a span {
-  display: block;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.5rem;
 }
